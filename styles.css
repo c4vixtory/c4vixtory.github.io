@@ -13,6 +13,7 @@ body, h1, p {
   position: relative;
   display: flex;
   flex-direction: column;
+  /* Remove height if used */
   background-color: black; /* Check if this interferes with the image */
 }
 
@@ -27,7 +28,6 @@ body, h1, p {
   background-size: cover;
   width: 100%;
   flex: 1; /* Fills remaining space in the container */
-  height: 100vh; /* Ensures background image fills viewport height */
 }
 
 /* Video background at the bottom */
@@ -47,4 +47,7 @@ header, main, footer {
   /* Removed display: flex; */
   justify-content: center;
   align-items: center;
+  /* Adjust content heights as needed (optional) */
+  /* Example:
+  header, footer { height: 10%; } */
 }
