@@ -13,27 +13,26 @@ body, h1, p {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: black; /* Check if this interferes with the image */
+  height: 100vh; /* Adjust height as needed */
+  background-color: black;
 }
 
 /* Background image */
 .parallax {
-  position: absolute; /* Make it absolute to layer behind video */
-  top: 0; /* Position at the top */
-  left: 0;
-  width: 100%;
-  height: 100vh; /* Ensures background image fills viewport height */
+  position: relative;
   z-index: 1; /* Updated to a positive value */
-  background-image: url('parallax.jpg'); /* Double-check the path */
+  background-image: url('parallax.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  flex: 1; /* Fills remaining space in the container */
 }
 
 /* Video background at the bottom */
 video {
-  position: relative; /* Make it relative to stack above background image */
+  position: absolute;
   bottom: 0; /* Positioned at the bottom */
   left: 0;
   width: 100%;
@@ -48,7 +47,4 @@ header, main, footer {
   /* Removed display: flex; */
   justify-content: center;
   align-items: center;
-  /* Adjust content heights as needed (optional) */
-  /* Example:
-  header, footer { height: 10%; } */
 }
