@@ -85,3 +85,7 @@ button:hover {
     background-size: cover;
     height: 100vh; /* Adjust the height as needed */
 }
+html {
+    scroll-behavior: smooth;
+}
+
