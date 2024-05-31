@@ -1,3 +1,5 @@
+/* styles.css */
+
 /* Reset default margin and padding */
 body, h1, p {
     margin: 0;
@@ -17,10 +19,10 @@ body, h1, p {
     background-color: black;
 }
 
-/* Background image */
+/* Parallax background image */
 .parallax {
     position: relative;
-    z-index: 1; /* Updated to a positive value */
+    z-index: 1;
     background-image: url('parallax.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -30,14 +32,14 @@ body, h1, p {
     flex: 1; /* Fills remaining space in the container */
 }
 
-/* Video background at the bottom */
+/* Video background */
 .video-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh; /* Adjust height as needed */
-    z-index: 0; /* Updated to a lower value */
+    z-index: 0;
 }
 
 .video-container video {
@@ -51,5 +53,5 @@ header, main, footer {
     text-align: center;
     justify-content: center;
     align-items: center;
-    z-index: 2; /* Updated to a higher value */
+    z-index: 2;
 }
