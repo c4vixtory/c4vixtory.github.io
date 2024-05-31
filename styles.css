@@ -83,7 +83,11 @@ button:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh; /* Adjust the height as needed */
+    position: relative;
+    top: 100vh; /* Move the parallax down by the height of the video */
+    width: 100%;
+    height: 100vh; /* Adjust the height to your liking */
+    
 }
 html {
     scroll-behavior: smooth;
@@ -95,16 +99,6 @@ html {
   width: 100%;
   height: 100vh; /* Adjust the height to your liking */
   overflow: hidden;
-}
-
-.parallax {
-  position: relative;
-  top: 100vh; /* Move the parallax down by the height of the video */
-  width: 100%;
-  height: 100vh; /* Adjust the height to your liking */
-  background-image: /* Your background image */;
-  background-size: cover;
-  background-position: center;
 }
 
 
