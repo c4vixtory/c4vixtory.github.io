@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column; /* Added */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -15,10 +15,25 @@ body {
   padding: 20px;
 }
 
+.parallax {
+  position: relative;
+  z-index: 0;
+  background-image: url('parallax.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .video-container {
   position: relative;
+  z-index: 1;
   width: 100%;
-  height: 100vh; /* Adjust the height as needed */
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -29,17 +44,6 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.parallax {
-  background-image: url('parallax.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh; /* Adjust the height as needed */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  z-index: 2;
 }
 
