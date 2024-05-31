@@ -1,57 +1,55 @@
 /* Reset default margin and padding */
 body, h1, p {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  color: #333; /* Changed to a darker shade */
-  font-size: 24px; /* Increased font size */
-  font-weight: bold; /* Added bold font weight */
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333; /* Changed to a darker shade */
+    font-size: 24px; /* Increased font size */
+    font-weight: bold; /* Added bold font weight */
 }
 
 /* Container for background elements with flexbox */
 .background-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100vh; /* Adjust height as needed */
-  background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Adjust height as needed */
+    background-color: black;
 }
 
 /* Background image */
 .parallax {
-  position: relative;
-  z-index: 1; /* Updated to a positive value */
-  background-image: url('parallax.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  flex: 1; /* Fills remaining space in the container */
+    position: relative;
+    z-index: 1; /* Updated to a positive value */
+    background-image: url('parallax.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    flex: 1; /* Fills remaining space in the container */
 }
 
 /* Video background at the bottom */
 .video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh; /* Adjust height as needed */
-  z-index: 0; /* Updated to a lower value */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
+    z-index: 0; /* Updated to a lower value */
 }
 
 .video-container video {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 /* Center the content vertically within the viewport */
 header, main, footer {
-  text-align: center;
-  /* Removed display: flex; */
-  justify-content: center;
-  align-items: center;
-  z-index: 2; /* Updated to a higher value */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Updated to a higher value */
 }
-
