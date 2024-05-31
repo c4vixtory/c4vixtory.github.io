@@ -19,26 +19,13 @@ body, h1, p {
     background-color: black;
 }
 
-/* Parallax background image */
-.parallax {
-    position: relative;
-    z-index: 1;
-    background-image: url('parallax.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    flex: 1; /* Fills remaining space in the container */
-}
-
 /* Video background */
 .video-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; /* Adjust height as needed */
+    height: 50vh; /* Adjust height as needed */
     z-index: 0;
 }
 
@@ -46,6 +33,21 @@ body, h1, p {
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+
+/* Space between video and picture */
+.spacer {
+    height: 20px; /* Adjust spacing as needed */
+}
+
+/* Friend's picture */
+.friend-picture {
+    text-align: center;
+}
+
+.friend-picture img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Center the content vertically within the viewport */
