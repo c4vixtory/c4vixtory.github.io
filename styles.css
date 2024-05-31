@@ -5,9 +5,9 @@ body, h1, p {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    color: #333; /* Changed to a darker shade */
-    font-size: 24px; /* Increased font size */
-    font-weight: bold; /* Added bold font weight */
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 /* Container for background elements with flexbox */
