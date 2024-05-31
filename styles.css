@@ -31,14 +31,19 @@ body, h1, p {
 }
 
 /* Video background at the bottom */
-video {
+.video-container {
   position: absolute;
-  bottom: 0; /* Positioned at the bottom */
+  top: 0;
   left: 0;
   width: 100%;
-  height: auto; /* Adjust height as needed */
+  height: 100vh; /* Adjust height as needed */
+  z-index: 0; /* Updated to a lower value */
+}
+
+.video-container video {
   object-fit: cover;
-  z-index: 2; /* Increased z-index to appear above background image */
+  width: 100%;
+  height: 100%;
 }
 
 /* Center the content vertically within the viewport */
@@ -47,4 +52,6 @@ header, main, footer {
   /* Removed display: flex; */
   justify-content: center;
   align-items: center;
+  z-index: 2; /* Updated to a higher value */
 }
+
